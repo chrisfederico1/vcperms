@@ -1,7 +1,8 @@
 
 
 <#
-   Help Stuff Here 
+   
+ Powershell Advanced Function
     
 #>
 
