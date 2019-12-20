@@ -14,11 +14,11 @@ function create-vcpermsreport
     [CmdletBinding()]
     param
     (
-        [Parameter(Mandatory=$true)]
-        [string]$Server,
+        #[Parameter(Mandatory=$true)]
+        #[string]$Server,
 
         [Parameter(Mandatory=$false)]
-        [string]$Path
+        [string]$Path = '.\vcpermsreport.csv'
     )
 
 BEGIN {
@@ -31,7 +31,7 @@ PROCESS{
 }
 
 END{
-    $permissions | export-csv .\vcpermsreport.csv -NoTypeInformation
+    $permissions | export-csv $Path -NoTypeInformation
 
 }
 
