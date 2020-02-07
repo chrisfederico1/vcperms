@@ -6,7 +6,7 @@
     
 #>
 
-function create-vcpermsreport
+function export-vcpermsreport
 
 {
     
